@@ -6,7 +6,7 @@ def main(page: ft.Page):
     lista_de_compras = []
     page.scroll = ft.ScrollMode.ALWAYS
 
-    logo_path = os.path.join(os.path.dirname(__file__), "img/carrito.png")  #aqui agregamos el logo
+    logo_path = os.path.join(os.path.dirname(__file__), "./carrito.png")  #aqui agregamos el logo
     logo = ft.Image(src=logo_path, width=200, height=150) #le damos el tamaño mas adecuado
 
     page.window.width = 600
