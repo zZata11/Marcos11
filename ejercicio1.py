@@ -118,7 +118,12 @@ def main(page: ft.Page):
             ft.ElevatedButton("Agregar", on_click=agregar_clic, bgcolor="#000000", color="white")
         ]
         if lista_de_compras:
-            
+             fila_botones.controls.append(
+                ft.ElevatedButton(
+                    "Descargar", on_click=exportar_lista, bgcolor="#000000", 
+                    color="white", width=120, height=30
+                )
+            )
             boton_limpiar.visible = True
         else:
             boton_limpiar.visible = False
